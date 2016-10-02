@@ -25,6 +25,8 @@ public class FormCSS extends Application {
         initialStage.setTitle("FormCSS");
 
         Text sceneTitle = new Text("Welcome FX");
+        // CSS selector
+        sceneTitle.setId("welcomeFX");
         sceneTitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
 
 
@@ -63,6 +65,8 @@ public class FormCSS extends Application {
 
         final Text actiontarget = new Text();
         grid.add(actiontarget, 1, 6);
+        // CSS selector
+        actiontarget.setId("actiontarget");
 
         btn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
